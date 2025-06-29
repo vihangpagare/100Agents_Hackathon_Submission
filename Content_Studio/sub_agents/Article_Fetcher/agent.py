@@ -140,7 +140,7 @@ def fetch_articles(tool_context: ToolContext) -> Dict[str, Any]:
             resp = tavily_client.search(
                 query=query,
                 search_depth="advanced",   # digs deeper than the default
-                max_results=5              # mirror Exa’s 5-result window
+                max_results=5           
             )
 
             # Response structure: resp["results"] -> list[dict]
